@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 .App {
   padding: 20px 20px 20px 100px;
-  font-family: 'Open Sans', 'Courier New', Courier, monospace;
+  font-family: "Open Sans", "Courier New", Courier, monospace;
   background-color: #f2f2f2;
   min-width: 100%;
   min-height: 100vh;
@@ -46,10 +46,10 @@
 }
 
 @keyframes rotating {
-  from{
+  from {
     transform: rotate(0deg);
   }
-  to{
+  to {
     transform: rotate(360deg);
   }
 }
@@ -58,17 +58,17 @@
   margin: 100px auto;
   width: 200px;
   position: relative;
-  animation: rotating .75s linear infinite;
+  animation: rotating 0.75s linear infinite;
 }
 .load-background {
-  border-radius:50%;
+  border-radius: 50%;
   border: 10px solid #ff70a6;
   border: 10px solid #ffd670;
   width: 200px;
   height: 200px;
 }
 .load {
-  border-radius:50%;
+  border-radius: 50%;
   border-left: 10px solid #ffd670;
   border-top: 10px solid #ffd670;
   border-left: 10px solid #ff70a6;

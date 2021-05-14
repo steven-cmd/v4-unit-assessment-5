@@ -71,7 +71,7 @@ class Dash extends Component {
           <Link to={`/post/${post.post_id}`}>
             <h3>{post.title}</h3>
           </Link>
-          {post.author_username === this.props.username ? (
+          {post.author_username === this.props.user.username ? (
             <button onClick={(_) => this.deletePost(post.post_id)}>
               delete your post
             </button>

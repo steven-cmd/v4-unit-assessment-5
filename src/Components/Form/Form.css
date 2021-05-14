@@ -1,45 +1,66 @@
 .form {
-    width: 70%;
-    margin: 0 auto;
-    font-size: 16px;
-    font-weight: 700;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.form-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-img-prev {
+  max-width: 95%;
+  height: 300px;
+  border: 1px solid lightgray;
+  margin-top: 20px;
+}
+
+.form-input-box {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
+.form-text-box {
+  width: 90%;
+  margin: 3px auto 10px;
+}
+
+.form-text-box > p {
+  margin: 0 0 7px;
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  font-family: "Open Sans", "Courier New", Courier, monospace;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 400px) {
+  .form {
+    min-height: 85vh;
   }
 
-  .form-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
   .form-img-prev {
     max-width: 95%;
-    height: 300px;
+    height: 150px;
     border: 1px solid lightgray;
     margin-top: 20px;
-  }
-  
-  .form-input-box {
-    width: 90%;
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 20px auto;
-  }
-  
-  .form-text-box {
-    width: 90%;
-    margin: 3px auto 10px;
-  }
-
-  .form-text-box > p {
-    margin: 0 0 7px;
   }
 
   textarea {
     min-width: 100%;
     max-width: 100%;
-    min-height: 100px;
-    font-family: 'Open Sans','Courier New', Courier, monospace;
+    min-height: 50px;
+    font-family: "Open Sans", "Courier New", Courier, monospace;
     font-size: 12px;
   }
+}
