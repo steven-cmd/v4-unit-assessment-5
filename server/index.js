@@ -22,6 +22,7 @@ app.use(
 
 massive({
   connectionString: CONNECTION_STRING,
+  ssl: { rejectUnauthorized: false },
 }).then((db) => {
   app.set("db", db);
   console.log("database is connnected");
