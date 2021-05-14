@@ -50,7 +50,7 @@ module.exports = {
     const date = new Date();
     if (id) {
       db.post
-        .createPost(id, title, img, content, date)
+        .create_post(id, title, img, content, date)
         .then(() => res.sendStatus(200));
     } else {
       res.sendStatus(403);

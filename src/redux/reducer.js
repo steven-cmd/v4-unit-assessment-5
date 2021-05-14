@@ -1,9 +1,9 @@
-initialState = {
+const initialState = {
   user: null,
 };
 
-UPDATE_USER = "UPDATE_USER";
-LOGOUT_USER = "LOGOUT_USER";
+const UPDATE_USER = "UPDATE_USER";
+const LOGOUT_USER = "LOGOUT_USER";
 
 export function updateUser(user) {
   return {

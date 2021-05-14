@@ -21,24 +21,26 @@ class Nav extends Component {
   }
 
   getUser() {
-    axios
-      .get("/api/auth/me")
-      .then((res) => this.props.updateUser(res.data));
+    axios.get("/api/auth/me").then((res) => this.props.updateUser(res.data));
   }
 
   logout() {
-    axios
-      .post("/api/auth/logout")
-      .then((_) => this.props.logout());
+    axios.post("/api/auth/logout").then((_) => this.props.logout());
   }
 
   render() {
+    console.log(this.props.user);
     return (
       this.props.location.pathname !== "/" && (
         <div className="nav">
           <div className="nav-profile-container">
-            <div className="nav-profile-pic" style={{backgroundImage=`url('${this.props.user.profile_pic}')`}}></div>
-            <p>{this.props.user.username}</p>
+            <div
+              className="nav-profile-pic"
+              style={{
+                backgroundImage: `url(${this.props.user?.profile_pic})`,
+              }}
+            ></div>
+            <p>{this.props.user?.username}</p>
           </div>
           <div className="nav-links">
             <Link to="/dash">
